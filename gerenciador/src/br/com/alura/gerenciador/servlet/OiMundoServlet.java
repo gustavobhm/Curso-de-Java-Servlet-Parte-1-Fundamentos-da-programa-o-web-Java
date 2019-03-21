@@ -13,13 +13,17 @@ public class OiMundoServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
+	public OiMundoServlet() {
+		System.out.println("Criando Oi Mundo Servlet");
+	}
+
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
 		PrintWriter out = resp.getWriter();
 		out.println("<html>");
 		out.println("<body>");
-		out.println("oi mundo, parabens vc escreveu o primeiro servlets.");
+		out.println("oi mundo, parabens vc escreveu o primeiro servlet.");
 		out.println("</body>");
 		out.println("</html>");
 
